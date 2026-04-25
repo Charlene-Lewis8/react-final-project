@@ -1,0 +1,71 @@
+.movie__card--frame {
+    background: #f4e4bc;
+    background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+    border: 2px solid #8b5a2b;
+    padding: 15px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 300ms ease;
+    color: #2c1b0e;
+}
+
+.movie__card--frame:hover {
+    transform: translateY(-10px) rotate(1deg);
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.7);
+}
+
+.poster__wrapper {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    overflow: hidden;
+    border: 4px solid #2c1b0e;
+    margin-bottom: 15px;
+}
+
+.movie__poster {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: sepia(20%);
+}
+
+.movie__lore h3 {
+    font-size: 1rem;
+    margin: 10px 0 5px 0;
+    height: 2.4em;
+    overflow: hidden;
+}
+
+.parchment__divider {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #8b5a2b, transparent);
+    margin: 10px 0;
+}
+
+.movie__description {
+    font-family: 'Crimson Text', serif;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    height: 4.2em;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.examine__btn {
+    width: 100%;
+    margin-top: 15px;
+    background: #2c1b0e;
+    color: var(--gold);
+    border: none;
+    font-family: 'Cinzel', serif;
+    padding: 10px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.examine__btn:hover {
+    background: #8b5a2b;
+    color: white;
+}

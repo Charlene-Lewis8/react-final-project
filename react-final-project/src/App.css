@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* NAVBAR */
+
+.magic__nav {
+    background: linear-gradient(to bottom, #2c1b0e, #1a0f06);
+    background-image: url('https://www.transparenttextures.com/patterns/dark-matter.png');
+    border-bottom: 3px solid var(--gold);
+    height: 80px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    align-items: center;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+}
+
+.nav__logo {
+    font-family: 'Cinzel';
+    color: var(--gold);
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 10px rgba(212, 175, 55, 0.3);
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.nav__links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav__links a {
+    text-decoration: none;
+    color: #e2c18d;
+    font-family: 'Cinzel', serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    transition: all 300ms ease;
+    position: relative;
+    padding: 5px 0;
+}
+
+.nav__links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--gold);
+    transition: width 300ms ease;
+    box-shadow: 0 0 8px var(--gold);
+}
+
+.nav__links a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.8);
+}
+
+.nav__links a:hover::after {
+    width: 100%;
+}
+
+.lumos__btn {
+    background: transparent;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    font-family: 'Cinzel', serif;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 400ms ease;
+    font-size: 14px;
+    box-shadow: inset 0 0 5px rgba(212, 175, 55, 0.2);
+}
+
+.lumos__btn:hover {
+    background: var(--gold);
+    color: var(--dark-wood);
+    font-weight: 500;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .nav__links {
+        display: none;
+    }
+    .nav__logo {
+        font-size: 1.4rem;
+    }
+}
+
+
+/* FOOTER */
+.magic__footer {
+    background-color: var(--dark-wood);
+    background-image: url('https://www.transparenttextures.com/patterns/dark-matter.png');
+    padding: 60px 5% 20px 5%;
+    color: #e2c18d;
+    font-family: 'Crimson Text', serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.footer__divider {
+    width: 100%;
+    max-width: 1200px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #d4af37, transparent);
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.footer__divider::after {
+    content: '❆';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1a0f06;
+    padding: 0 15px;
+    color: #d4af37;
+    font-size: 1.2rem;
+}
+
+.footer__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-items: center;
+}
+
+.footer__section {
+    text-align: center;
+}
+
+.footer__section h3,
+.footer__section h4 {
+    font-family: 'Cinzel', serif;
+    color: var(--gold);
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+
+}
+
+.footer__section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer__section ul li {
+    margin-bottom: 10px;
+}
+
+.footer__section ul li a {
+    color: #e2c18d;
+    text-decoration: none;
+    transition: color 300ms ease;
+}
+
+.footer__section ul li a:hover {
+    color: #fff;
+    text-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+}
+
+.social__icons {
+    display: flex;
+    gap: 15px;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.magic__footer p {
+    font-size: 16px;
+    font-family: 'Crimson Text', serif;
+}
+
+.rune {
+    cursor: pointer;
+    transition: transform 300ms ease, color 300ms ease;
+}
+.rune:hover {
+    transform: translateY(-5px);
+    color: var(--gold);
+}
+
+.owl__post--input input {
+    background: transparent;
+    border: 1px solid var(--gold);
+    border-radius: 4px;
+    color: #fff;
+    padding: 8px;
+    width: 100%;
+    font-family: 'Crimson Text', serif;
+    margin-top: 5px;
+}
+
+.owl__post--input input:focus {
+    outline: none;
+    border-color: var(--gold);
+}
+
+.owl__post--input button {
+    background: linear-gradient(45deg, #8b5a2b, #d4af37);
+    border: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-top: 4px;
+    font-family: 'Cinzel', serif;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 300ms ease;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+}
+
+.owl__post--input button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.6);
+}
+
+.footer__bottom {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.8rem;
+    opacity: 0.6;
+    border-top: 1px solid rgba(212, 175, 55, 0.1);
+    padding-top: 20px;
+}

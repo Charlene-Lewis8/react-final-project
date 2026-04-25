@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --gold: #d4af37;
+  --dark-wood: #1a0f06;
+  --parchment:#f4e4bc;
+  --magic-blue: #0a192f;
+  --nav-bg: #2c1b0e;
+}
+
+body {
+  max-width: 100vw;
+  margin: 0;
+  background-color: var(--dark-wood);
+  color: white;
+  font-family: 'Crimson Text', serif;
+}
+
+h1, h2, h3, .nav__link {
+  font-family: 'Cinzel', serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
